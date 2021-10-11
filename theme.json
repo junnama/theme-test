@@ -5,6 +5,7 @@
     "thumbnail"    : "theme.png",
     "author"       : "Alfasado Inc.",
     "author_link"  : "https://alfasado.net/",
+    "repository"   : "https://github.com/junnama/theme-test",
     "description"  : "Minimal theme with dynamic publishing settings and index.html.",
     "publish_theme": true,
     "views": {
