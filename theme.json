@@ -1,10 +1,10 @@
 {
     "label"        : "Theme-Test",
     "id"           : "theme-test",
-    "version"      : "1.0",
+    "version"      : "0.8",
     "thumbnail"    : "theme.png",
     "author"       : "Alfasado Inc.",
-    "author_link"  : "https://alfasado.net/",
+    "author_link"  : "https://alfasado.net/index.html",
     "repository"   : "https://github.com/junnama/theme-test",
     "description"  : "Minimal theme with dynamic publishing settings and index.html.",
     "publish_theme": true,
@@ -15,6 +15,7 @@
             "status": "2",
             "class": "Archive",
             "basename": "theme-test_main_page",
+            "path" : "index/index.tmpl",
             "urlmappings": [
                 {
                     "name": "(Theme-Test) Top Page",
@@ -29,6 +30,7 @@
             "status": "2",
             "class": "Archive",
             "basename": "theme-test_htaccess",
+            "path" : "index/_htaccess.tmpl",
             "urlmappings": [
                 {
                     "name": "(Theme-Test) .htaccess",
@@ -43,6 +45,7 @@
             "status": "2",
             "class": "Archive",
             "basename": "theme-test_bootstrapper",
+            "path" : "index/pt-view.tmpl",
             "urlmappings": [
                 {
                     "name": "(Theme-Test) Bootstrapper",
