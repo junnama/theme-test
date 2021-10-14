@@ -1,3 +1,1 @@
-# theme-test
-
-6th commit
+7th commit
