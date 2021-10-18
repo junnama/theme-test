@@ -1,12 +1,12 @@
 {
-    "label"        : "Theme-Test",
-    "id"           : "theme-test",
-    "version"      : "0.8",
-    "thumbnail"    : "theme.png",
-    "author"       : "Alfasado Inc.",
-    "author_link"  : "https://alfasado.net/index.html",
-    "repository"   : "https://github.com/junnama/theme-test",
-    "description"  : "Minimal theme with dynamic publishing settings and index.html.",
+    "label": "Theme-Test",
+    "id": "theme-test",
+    "version": "0.8",
+    "thumbnail": "theme.png",
+    "author": "Alfasado Inc.",
+    "author_link": "https:\/\/alfasado.net\/index.html",
+    "repository": "https:\/\/github.com\/junnama\/theme-test",
+    "description": "Minimal theme with dynamic publishing settings and index.html.",
     "publish_theme": true,
     "views": {
         "709c05cd-52cb-4f25-9f88-612bb6d33c2f": {
@@ -15,7 +15,7 @@
             "status": "2",
             "class": "Archive",
             "basename": "theme-test_main_page",
-            "path" : "index/index.tmpl",
+            "linked_file": "%t\/index\/index.tmpl",
             "urlmappings": [
                 {
                     "name": "(Theme-Test) Top Page",
@@ -30,7 +30,7 @@
             "status": "2",
             "class": "Archive",
             "basename": "theme-test_htaccess",
-            "path" : "index/_htaccess.tmpl",
+            "linked_file": "%t\/index\/_htaccess.tmpl",
             "urlmappings": [
                 {
                     "name": "(Theme-Test) .htaccess",
@@ -45,7 +45,7 @@
             "status": "2",
             "class": "Archive",
             "basename": "theme-test_bootstrapper",
-            "path" : "index/pt-view.tmpl",
+            "linked_file": "%t\/index\/pt-view.tmpl",
             "urlmappings": [
                 {
                     "name": "(Theme-Test) Bootstrapper",
@@ -54,6 +54,13 @@
                     "publish_file": "1"
                 }
             ]
+        },
+        "f16ae25c-c893-4970-bd20-f1b2a270dab8": {
+            "name": "(Theme-Test) Entry",
+            "subject": "",
+            "status": "2",
+            "basename": "theme-test_entry",
+            "linked_file": "%t\/entry\/entry.tmpl"
         }
     }
 }
