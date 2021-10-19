@@ -1,11 +1,11 @@
 {
     "label": "Theme-Test",
     "id": "theme-test",
-    "version": "1.02",
+    "version": "1.03",
     "thumbnail": "theme.png",
     "author": "Alfasado Inc.",
-    "author_link": "https:\/\/alfasado.net\/index.html",
-    "repository": "https:\/\/github.com\/junnama\/theme-test",
+    "author_link": "https://alfasado.net/index.html",
+    "repository": "https://github.com/junnama/theme-test",
     "description": "Minimal theme with dynamic publishing settings and index.html.",
     "publish_theme": true,
     "views": {
@@ -15,7 +15,7 @@
             "status": "2",
             "class": "Archive",
             "basename": "theme-test_main_page",
-            "linked_file": "%t\/index\/index.tmpl",
+            "linked_file": "%t/index/index.tmpl",
             "urlmappings": [
                 {
                     "name": "(Theme-Test) Top Page",
@@ -30,7 +30,7 @@
             "status": "2",
             "class": "Archive",
             "basename": "theme-test_htaccess",
-            "linked_file": "%t\/index\/_htaccess.tmpl",
+            "linked_file": "%t/index/_htaccess.tmpl",
             "urlmappings": [
                 {
                     "name": "(Theme-Test) .htaccess",
@@ -45,7 +45,7 @@
             "status": "2",
             "class": "Archive",
             "basename": "theme-test_bootstrapper",
-            "linked_file": "%t\/index\/pt-view.tmpl",
+            "linked_file": "%t/index/pt-view.tmpl",
             "urlmappings": [
                 {
                     "name": "(Theme-Test) Bootstrapper",
@@ -60,7 +60,7 @@
             "subject": "",
             "status": "2",
             "basename": "theme-test_entry",
-            "linked_file": "%t\/entry\/entry.tmpl"
+            "linked_file": "%t/entry/entry.tmpl"
         }
     }
 }
