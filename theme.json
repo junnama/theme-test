@@ -1,7 +1,7 @@
 {
     "label": "Theme-Test",
     "id": "theme-test",
-    "version": "1.072",
+    "version": "1.08",
     "thumbnail": "theme.png",
     "author": "Alfasado Inc.",
     "author_link": "https://alfasado.net/index.html",
@@ -61,6 +61,31 @@
             "status": "2",
             "basename": "theme-test_entry",
             "linked_file": "%t/entry/entry.tmpl"
+        },
+        "ecc3b948-1d2d-4178-b825-c7fe8d8a1f05": {
+            "name": "basic.scss",
+            "subject": "",
+            "status": "2",
+            "basename": "basic_scss",
+            "class": "Archive",
+            "linked_file": "%t/scss/basic.scss",
+            "urlmappings": [
+                {
+                    "name": "basic.css",
+                    "model": "template",
+                    "mapping": "css/basic.css",
+                    "publish_file": "1",
+                    "trigger_scope": "1"
+                }
+            ]
+        },
+        "21681049-0f89-412f-a5b4-11fbe3ad1a28": {
+            "name": "新規ビュー",
+            "subject": "",
+            "status": "2",
+            "basename": "template",
+            "class": "Archive",
+            "linked_file": "%t/test/test.txt"
         }
     }
 }
