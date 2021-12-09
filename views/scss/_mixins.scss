@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+@use "setting";
+@use "core/utility";
+
+// -----------------------------------------------------------
+// Mixins
+// -----------------------------------------------------------
+@mixin editor-style {
+	p,
+	> ul,
+	> ol,
+	dl,
+	table {
+		margin-bottom: utility.rs(16,16,"rem");
+		line-height: utility.rs(30,16, "");
+		font-size: utility.rs(16,16, "rem");
+	}
+
+	h3 {
+		margin: 1.78571em 0 1.17857em;
+		line-height: utility.rs(40,28, "");
+		font-size: utility.rs(28,16, "rem");
+		font-weight: bold;
+	}
+}
+
+@mixin list-reset {
+	padding-left: 0;
+	list-style: none;
+}
