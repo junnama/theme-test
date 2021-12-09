@@ -1,0 +1,167 @@
+@use "setting";
+@use "mixins";
+@use "core/utility";
+
+@import "slick";
+
+.keyVisual {
+	overflow: hidden;
+	margin-bottom: 30px;
+	line-height: 1;
+	text-align: center;
+	img {
+		max-width: initial;
+		width: 100%;
+		height: auto;
+	}
+	a {
+		display: block;
+		position: relative;
+		&::before {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 2;
+			display: block;
+			content: "";
+			background-color: transparent;
+			transition: all .3s;
+		}
+		&:hover,
+		&:active,
+		&:focus {
+			position: relative;
+			&::before {
+				background-color: rgba(74,104,144,.21);
+			}
+		}
+	}
+	.js &:not(.slick-initialized) .keyVisual__item:not(:first-child) {
+		display: none;
+	}
+
+	/* Slider */
+	.slick-slider {
+		margin: 0;
+		padding: 0;
+	}
+
+	/* Prev, Next */
+	.slick-prev,
+	.slick-next {
+		position: absolute;
+		top: 50%;
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		width: 38px;
+		height: 38px;
+		border: 0;
+		background-color: transparent;
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		text-indent: -9999px;
+		z-index: 1;
+		cursor: pointer;
+	}
+	.slick-prev {
+		left: 45px;
+		background-image: url("/images/top_kv_left.svg");
+		@include utility.mq(736) {
+			left: 0;
+		}
+		&:hover,
+		&:focus {
+		}
+	}
+	.slick-next {
+		right: 45px;
+		background-image: url("/images/top_kv_right.svg");
+		@include utility.mq(736) {
+			right: 0;
+		}
+		&:hover,
+		&:focus {
+		}
+	}
+
+	/* Control */
+	.slick-control {
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+		padding: 5px 9px;
+		max-width: 75%;
+		height: 30px;
+		border-radius: 54px;
+		background-color: #F8F8F8;
+		@include utility.mq-min(737) {
+			position: absolute;
+			left: 50%;
+			bottom: 36px;
+			transform: translateX(-50%);
+		}
+	}
+
+	/* Start, Pause */
+	.slick-start,
+	.slick-pause {
+		appearance: none;
+		overflow: hidden;
+		margin: 0 17px;
+		padding: 0;
+		border-width: 0;
+		width: 20px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-color: transparent;
+		line-height: 1em;
+		cursor: pointer;
+		text-indent: -9999px;
+		&:hover,
+		&.-active,
+		&:focus {
+		}
+	}
+	.slick-start {
+		background-image: url("/images/top_kv_start.svg");
+	}
+	.slick-pause {
+		background-image: url("/images/top_kv_stop.svg");
+	}
+
+	/* Dots */
+	.slick-dots {
+		display: flex;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+		line-height: 1;
+		li {
+			margin: 0 17px;
+			button {
+				appearance: none;
+				overflow: hidden;
+				display: inline-block;
+				width: 16px;
+				height: 16px;
+				padding: 0;
+				border-width: 0;
+				background-color: #004280;
+				text-indent: -9999px;
+				line-height: 1;
+				box-sizing: border-box;
+				cursor: pointer;
+				transition: all .3s;
+			}
+			button:hover,
+			button:focus,
+			&.slick-active button {
+				height: 34px;
+				// background-color: $colorBlue;
+			}
+		}
+	}
+}
