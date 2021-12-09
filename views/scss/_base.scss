@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+@use "setting";
+@use "mixins";
+@use "core/utility";
+
+/* -----------------------------------------------------------
+   Base
+----------------------------------------------------------- */
+main {
+	#topIndex & {
+		padding-top: 28px;
+		background-image: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjI4IiB2aWV3Qm94PSIwIDAgMTA4MCAyOCIgd2lkdGg9IjEwODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxsaW5lYXJHcmFkaWVudCBpZD0iYSIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSIuNSIgeDI9Ii41IiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjYjdjMWQ5Ii8+PHN0b3Agb2Zmc2V0PSIuMzMiIHN0b3AtY29sb3I9IiNlNmU2ZTYiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPjwvbGluZWFyR3JhZGllbnQ+PHBhdGggZD0ibTAgMGgxMDgwdjI4aC0xMDgweiIgZmlsbD0idXJsKCNhKSIgb3BhY2l0eT0iLjI1OCIvPjwvc3ZnPg==);
+		background-repeat: repeat-x;
+	}
+}
