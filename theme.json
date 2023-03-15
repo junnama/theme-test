@@ -1,12 +1,12 @@
 {
     "label": "Theme-Test",
     "id": "theme-test",
-    "version": "1.08",
+    "version": "1.09",
     "thumbnail": "theme.png",
     "author": "Alfasado Inc.",
     "author_link": "https://alfasado.net/index.html",
     "repository": "https://github.com/junnama/theme-test",
-    "description": "Minimal theme with dynamic publishing settings and index.html.",
+    "description": "Test theme for Theme_GitHub plugin.",
     "publish_theme": true,
     "views": {
         "709c05cd-52cb-4f25-9f88-612bb6d33c2f": {
