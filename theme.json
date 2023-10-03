@@ -1,7 +1,7 @@
 {
     "label": "Theme-Test",
     "id": "theme-test",
-    "version": "1.5",
+    "version": "1.55",
     "thumbnail": "theme.png",
     "author": "Alfasado Inc.",
     "author_link": "https://alfasado.net/index.html",
@@ -10,7 +10,7 @@
     "publish_theme": true,
     "views": {
         "709c05cd-52cb-4f25-9f88-612bb6d33c2f": {
-            "name": "(Theme-Test) Top Page",
+            "name": "(Theme-Test2) Top Page",
             "subject": "",
             "status": "2",
             "class": "Archive",
